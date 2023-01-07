@@ -1,0 +1,90 @@
+body {
+  font-family: Google Sans, arial, sans-serif;
+}
+h3 {
+  display: inline;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.ulclass {
+  list-style: none;
+  padding: 0px;
+  color: rgb(112, 117, 122);
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.ulclass2 {
+  list-style: none;
+  padding: 0px;
+  text-align: right;
+}
+
+.liclass1 {
+  color: rgb(32, 33, 36);
+  font-family: Google Sans, arial, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: right;
+}
+
+.liclass2 {
+  color: rgb(112, 117, 122);
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: right;
+}
+.liclass2:first-letter {
+  text-transform: capitalize;
+}
+.weather-app-wrapper {
+  max-width: 800px;
+  margin: 50px auto;
+}
+.weather-app {
+  padding: 15px;
+  border: 1px solid #dadce0;
+  border-radius: 10px;
+}
+.weather-temprature strong {
+  color: rgb(32, 33, 36);
+  display: inline;
+  font-family: Google Sans, arial, sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 56px;
+}
+.weather-temprature .active{
+  color: black;
+  cursor: default;
+
+}
+.weather-temprature .active:hover{
+  text-decoration: none;
+}
+#icon{
+  margin-top: -17px;
+}
+
+.weather-forecast{
+  text-align: center;
+  margin-top: 20px;
+}
+.weather-forecast-date{
+  opacity: 0.4;
+  color: black;
+}
+.weather-forecast-temp{
+  font-size: 13px;
+
+}
+.weather-forecast-temp-min{
+opacity: 0.4;
+}
