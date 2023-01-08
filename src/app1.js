@@ -32,8 +32,9 @@ function displayDay(datetime) {
     "Saturday",
   ];
   
-let date = new Date(datetime);
+let date = new Date(datetime*1000);
   let day = days[date.getDay()];
+  console.log(day);
   return day;
 }
 function displayForecast(response) {
@@ -99,11 +100,12 @@ function displayTemp(response) {
   );
   iconElm.setAttribute("alt", response.data.weather[0].description);
   celsiusTemprature = Math.round(response.data.main.temp);
+  console.log(response);
   findCoordinate(response.data.coord);
 }
 function search(city) {
   let apiKey = "dc913128ccaa43cdc1ca63d7d482beef";
-  let apiUrl = ` https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+  let apiUrl = ` https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemp);
 }
 function handleSubmit(event) {
